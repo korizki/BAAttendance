@@ -1,0 +1,191 @@
+/* tampilan responsive mobile 428px */
+@media screen and (max-width: 428px){
+  body{
+    font-size: 15px;
+  }
+  .nav_icon{
+    height: 45px;
+    top: 18px;
+    left: 25px;
+  }
+  .headertext{
+    margin-block-start: 0px;
+    gap: 20px;
+    padding: 0 25px;
+  }
+  .headertext > h1{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-block-start: 0;
+    line-height: 1.5;
+  }
+  .headertext > h1 > span{
+    padding: 15px;
+  }
+  .headertext > p{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.2em;
+  }
+  .jumbotron figure {
+    width: 100%;
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
+  }
+  .jumbotron{
+    flex-direction: column-reverse;
+  }
+  .btnblue{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  body section{
+    padding: 0px;
+  }
+  .wrapper{
+    width: 90%;
+    padding: 25px;
+    margin-left: 5%;
+    margin-block-start: 30px;
+  }
+  .wrapper h2{
+    font-size: 1.3rem;
+  }
+  .nav-data{
+    flex-direction: column;
+  }
+  .nav-data form{
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-data form input{
+    width: 100%;
+  }
+  footer{
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+    gap: 30px;
+    font-size: 1rem;
+    align-items: center;
+  }
+  .corpInfo p{
+    line-height: 1.1;
+  }
+  .corpInfo figure{
+    margin: auto;
+    margin-block-end: 25px;
+  }
+  /* Halaman Summary */
+  .page_title h1{
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    margin: 0;
+    margin-inline-start: 20px;
+  }
+  .s_date_info{
+    padding: 15px;
+    font-size: 0.9rem;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    top: 8px;
+  }
+  .box_date_info{
+    display: block;
+  }
+  .s_date_info p{
+    line-height: 1.5;
+  }
+  .labelEdit{
+    display: none;
+  }
+  .s_boxLocation{
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+  }
+  .s_boxLocation .wrapper{
+    padding: 20px 25px;
+  }
+  .s_boxLocation .wrapper h1{
+    font-size: 1.2rem;
+    padding-block-end: 15px;
+  }
+  .s_boxLocation table tr td{
+    padding: 12px 20px;
+  }
+  .s_boxLocation table tr th{
+    font-size: 0.9rem;
+  }
+  .s_boxLocation table tr td{
+    font-size: 0.9rem;
+  }
+  .smallbtn{
+    margin-inline-start: 80px;
+  }
+  .s_boxLocation table tr td:nth-child(2){
+    font-size: 1rem;
+  }
+  .s_boxLocation table tr td:nth-child(3){
+      font-size: 1rem;
+  }
+  #graphSummary .wrapper{
+    margin-block-start: 0;
+  }
+  #graphSummary2 .wrapper{
+    margin-top: 50px !important;
+  }
+  .btnDetail{
+    font-size: 0.9rem;
+    padding: 12px 0px;
+  }
+  .btnDetail a{
+    text-align: center;
+    width: 100%;
+  }
+  #graphSummary{
+    padding-block-start: 80px !important;
+  }
+  #graphSummary2{
+    padding-block-start: 80px !important;
+  }
+}
+
+/* tampilan responsive mobile 375px */
+@media screen and (max-width: 375px){
+  .nav_icon{
+    height: 35px;
+  }
+  .headertext > h1{
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+  .headertext > p{
+    font-size: 1.1em;
+  }
+  footer{
+    font-size: 0.9rem;
+  }
+  /* Halaman Summary */
+  .s_date_info p{
+    font-size: 1rem;
+  }
+  .smallbtn{
+    margin-inline-start: 50px;
+  }
+  .s_boxLocation{
+    padding: 17px;
+  }
+  .s_boxLocation .wrapper{
+    padding: 15px 20px;
+  }
+  .s_boxLocation .wrapper h1{
+    font-size: 1.1rem;
+    padding-block-end: 12px;
+  }
+  .s_boxLocation table tr td{
+    font-size: 0.8rem;
+  }
+}

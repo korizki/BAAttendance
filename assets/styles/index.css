@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --blue: rgb(22, 70, 114);
+    --grey: rgb(99, 99, 99);
+    --red: rgb(243, 51, 51);
+    --line: rgba(177, 177, 177, 0.378);
+}
+body{
+    background-image:url(../images/homebg.svg);
+    padding: 0;
+    margin: 0;
+}
+body section{
+    width: 100%;
+    padding: 50px;
+}
+.nav_icon{
+    position: absolute;
+    height: 45px;
+    width: auto;
+    top: 20px;
+}
+.jumbotron{
+    display: flex;
+    width: 100%;
+}
+.headertext{
+    flex: 1;
+    padding-inline-start: 50px;
+    margin-block-start: 90px;
+}
+.headertext > h1{
+    font-size: 4.2em;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.4;
+}
+.headertext > p{
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: var(--grey);
+    margin-bottom: 40px;
+}
+.jumbotron figure{
+    flex: 1;
+}
+.jumbotron img{
+    width: 100%;
+    height: 100%;
+}
+button{
+    cursor: pointer;
+}
+.btnblue{
+    background: var(--blue);
+    color: white;
+    padding: 15px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+}
+.btnblue:hover{
+    box-shadow: 0 0 10px 0 rgba(44, 74, 102, 0.8);
+}
+.bgred{
+    color: var(--red) !important;
+}   
+
+#graphSummary .wrapper{
+    margin-block-start: 85px; 
+}
+.wrapper{
+    background: white;
+    border: 1px solid rgba(177, 177, 177, 0.378);;
+    padding: 30px 40px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 0 rgba(128, 128, 128, 0.180);
+}
+.wrapper h2{
+    color: var(--blue);
+    margin-block-start: 0;
+    padding-block-end: 10px;
+    border-block-end: 1px solid var(--line);
+}
+.wrapper p{
+    margin: 0;
+    color: var(--grey);
+    font-weight: 400;
+}
+.nav-data{
+    margin-block-start: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-data form{
+    display: flex;
+    gap: 20px;
+}
+.nav-data form input, select{
+    background: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--line); 
+    font-size: 1em;
+    color: var(--grey);
+}
+.nav-data form select{
+    padding: 13px 18px;
+}
+.nav-data form input[type="submit"]{
+    padding: 14px 25px;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+.nav-data form input[type="submit"]:hover, :focus{
+    box-shadow: 0 0 10px 0 rgba(44, 74, 102, 0.8);
+}
+.nav-data form input[type="submit"]:focus{
+    outline: none;
+}
+.nav-data form input:focus, select:focus{
+    outline: 1px solid var(--blue);
+}
+.nav-data form input:hover, select:hover{
+    box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.275); 
+}
+footer{
+    background: rgb(255, 255, 255);
+    border-block-start: 4px solid var(--blue);
+}
+footer {
+    display: flex; 
+    justify-content: space-between;
+    margin-block-start: 50px;
+}
+.fa, .fas{
+    margin-right: 10px;
+}
+footer section .corpInfo{
+    color: var(--grey);    
+}
+.corpInfo figure{
+    margin-inline-start: 0;
+    margin-block-start: 0;
+}
+.corpInfo img{
+    height: 45px;
+    width: auto;
+}
+.corpInfo p{
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 15px; 
+}
+.corpInfo h1{
+    margin-block-start: 0;
+    margin-block-start: 25px;
+    margin-block-end: 30px;
+}
+.svg-inline--fa{
+    margin-right: 10px;
+}
+/* Pages Summary */
+.page_title h1{
+    color: white;
+    background: rgb(201, 10, 10);
+    display: inline-block;
+    margin-inline-start: 70px;
+    margin-block-start: 0;
+    padding: 15px 30px 20px 30px;
+    border-radius: 0 0 14px 14px;
+    font-size: 2.5em;
+}
+.s_date_info{
+    padding: 20px 40px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 25px;
+    height: 70px;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+}
+.box_date_info{
+    display: flex;
+    justify-content: space-between;
+}
+.box_date_info p a:focus{
+    background: none !important;
+    box-shadow: none;
+    outline: none;
+}
+.box_edit_date{
+    border-block-start: 1px solid var(--line);
+    padding: 20px;
+}
+.s_left_menu a{
+    display: inline-block;
+    color: var(--red) !important;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.s_date_info p{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--blue);
+}
+.s_boxLocation{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 80px;
+    gap: 60px;
+}
+.s_boxLocation .wrapper{
+    width: 100%;
+    margin: 0;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+.smallbtn{
+    margin-inline-start: 200px; 
+    color: var(--line);
+}
+.smallbtn:hover{
+    color: var(--blue);
+}
+.smallbtn:focus{
+    box-shadow: none;
+}
+.s_boxLocation .wrapper h1{
+    color: var(--blue);
+    border-bottom: 1px solid var(--line);
+    margin: 0;
+    font-size: 1.5rem;
+    padding-block-end: 15px;
+    font-weight: 600;
+}
+.s_boxLocation table{
+    margin: 20px 0;
+    color: var(--grey);
+    width: 100%;
+    border-collapse: collapse;
+}
+.s_boxLocation table tr th{
+    border-bottom: 1px solid var(--line);
+    font-weight: 600;
+    padding: 12px;
+    font-size: 1rem;
+    background: var(--blue);
+    color: white;
+}
+.s_boxLocation table tr td{
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.s_boxLocation table tr{
+    border: 1px solid var(--line);
+    transition: all 0.01s ease-in-out;
+    margin: 2px 0;
+}
+.s_boxLocation table tr:hover{
+    background: rgba(167, 167, 167, 0.172);;
+    color: var(--blue);
+    cursor: pointer;
+}
+.s_boxLocation table tr td:nth-child(2){
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.s_boxLocation table tr td:nth-child(3){
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.btnDetail{
+    display: flex;
+    justify-content: flex-end;
+}
+.btnDetail a{
+    background: var(--blue);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+.btnDetail a:hover{
+    box-shadow: 0 0 10px 0 rgba(44, 74, 102, 0.8);
+}
+.btnDetail a:focus{
+    outline: none;
+    border: none;
+}
