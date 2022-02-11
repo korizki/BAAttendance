@@ -281,7 +281,7 @@ footer section .corpInfo{
 }
 .s_boxLocation table tr td{
     padding: 15px 20px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 300;
 }
 .s_boxLocation table tr{
@@ -362,8 +362,14 @@ footer section .corpInfo{
 .tAttendance table tr td:nth-child(4){
     text-align: center;
 }
+.pagination{
+    width: auto;
+    overflow: hidden;
+}
 .pagination ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border-radius: 5px;
     margin-block-start: 40px;
     text-align: center;

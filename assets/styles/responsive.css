@@ -92,7 +92,7 @@
   .s_date_info{
     padding: 15px;
     font-size: 0.9rem;
-    height: 60px;
+    height: 80px;
     border-radius: 10px;
     text-align: center;
     top: 8px;
@@ -128,16 +128,16 @@
     font-size: 0.9rem;
   }
   .s_boxLocation table tr td{
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   .smallbtn{
     margin-inline-start: 80px;
   }
   .s_boxLocation table tr td:nth-child(2){
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .s_boxLocation table tr td:nth-child(3){
-      font-size: 1rem;
+      font-size: 0.9rem;
   }
   #graphSummary .wrapper{
     margin-block-start: 0;
