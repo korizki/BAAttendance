@@ -30,7 +30,7 @@
     $total_pages = ceil($total_records / $limit);
   ?>
 
-  <div class="wrapper" style="margin: 60px 10%; padding: 40px 50px;">
+  <div class="wrapper detailPIT2">
     <h2><i class="fa fa-users"></i>PIT-3 | List Of Attendance  </h2>
     <div class="boxListAttendance">
       <div id="target-content" class="tAttendance">
