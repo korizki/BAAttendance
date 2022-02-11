@@ -50,7 +50,7 @@
     margin-block-start: 30px;
   }
   .wrapper h2{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .nav-data{
     flex-direction: column;
@@ -159,6 +159,37 @@
   #graphSummary2{
     padding-block-start: 80px !important;
   }
+  .detailPIT2{
+    margin: 30px 20px;
+    padding: 20px;
+  }
+  .boxListAttendance{
+    display: block;
+  }
+  .boxListAttendance figure{
+    width: auto;
+  }
+  /* .boxListAttendance figure img{
+    width: 100%;
+  } */
+  .t_operator table{
+    font-size: 0.6rem;
+  }
+  .tAttendance .t_operator{
+    width: 100%;
+    height: auto;
+  }
+  .t_operator table tr td{
+    font-size: 0.5rem;
+    padding: 5px;
+  }
+  .pagination ul{
+    margin-block-start: 20px;
+  }
+  .pagination ul li a{
+    padding: 8px 10px;
+    font-size: 0.5rem;
+  }
 }
 
 /* tampilan responsive mobile 375px */
@@ -182,7 +213,7 @@
   }
   .s_date_info{
     padding: 10px;
-    height: 47px;
+    height: 68px;
     border-radius: 6px;
   }
   .smallbtn{
