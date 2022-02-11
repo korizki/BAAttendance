@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attandance Monitoring - Bukit Asam</title>
-	 <link rel="icon" href="assets/images/logo.png">
+	 	<link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/styles/index.css" />
 		<link rel="stylesheet" href="assets/styles/responsive.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- <script defer src="assets/scripts/all.js"></script> -->
+		<script defer src="assets/scripts/script.js"></script>
 </head>
 <body id="summary">
 	<nav>
@@ -34,14 +34,18 @@
 			<div>
 				<h2> <i class="fa fa-calendar-alt"></i> Select Data Periode</h2>
 				<div class="nav-data">
-					<p>Please choose Date and Shift for data : </p>
 					<form action="pages/summary.php" method="get" target="_blank">
-						<input type="date" name="date" id="date">
+						<label for="date1">Start Date</label>
+						<input type="date" name="date1" id="date1">
+						<label for="date1">End Date</label>
+						<input type="date" name="date2" id="date2">
+						<label for="shift">Shift</label>
 						<select id="shift" name="shift">
 							<option value="1">Shift 1</option>
 							<option value="2">Shift 2</option>
+							<option value="All">All Shift</option>
 						</select>
-						<input type="submit" name="submit" value="Show Data">
+						<input type="submit" id="submit" name="submit" value="Show Data">
 					</form>
 				</div>
 			</div>

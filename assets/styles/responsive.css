@@ -58,9 +58,14 @@
   .nav-data form{
     flex-direction: column;
     width: 100%;
+    gap: 15px;
+    align-items: flex-start;
   }
-  .nav-data form input{
+  .nav-data form input, select{
     width: 100%;
+  }
+  .nav-data {
+    justify-content: flex-start;
   }
   footer{
     flex-direction: column;
@@ -103,10 +108,13 @@
   }
   .s_boxLocation{
     flex-direction: column;
-    padding: 25px;
+    padding: 20px 0;
     gap: 30px;
+    margin-inline-start: 5%;
+    width: 90%;
   }
   .s_boxLocation .wrapper{
+    width: 100%;
     padding: 20px 25px;
   }
   .s_boxLocation .wrapper h1{
@@ -172,14 +180,22 @@
   .s_date_info p{
     font-size: 1rem;
   }
+  .s_date_info{
+    padding: 10px;
+    height: 47px;
+    border-radius: 6px;
+  }
   .smallbtn{
     margin-inline-start: 50px;
   }
   .s_boxLocation{
     padding: 17px;
+    width: 100%;
+    margin-inline-start: 0;
   }
   .s_boxLocation .wrapper{
     padding: 15px 20px;
+    border-radius: 7px;
   }
   .s_boxLocation .wrapper h1{
     font-size: 1.1rem;

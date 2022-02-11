@@ -74,8 +74,9 @@ button{
     border: none;
     border-radius: 8px;
 }
-.btnblue:hover{
+.btnblue:hover, .btnblue:focus{
     box-shadow: 0 0 10px 0 rgba(44, 74, 102, 0.8);
+    outline: none;
 }
 .bgred{
     color: var(--red) !important;
@@ -104,6 +105,9 @@ button{
     color: var(--grey);
     font-weight: 400;
 }
+.nav-data label{
+    color: var(--grey);
+}
 .nav-data{
     margin-block-start: 25px;
     display: flex;
@@ -114,6 +118,7 @@ button{
 .nav-data form{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 .nav-data form input, select{
     background: white;
@@ -132,11 +137,12 @@ button{
     color: white;
     cursor: pointer;
 }
-.nav-data form input[type="submit"]:hover, :focus{
+.nav-data form input[type="submit"]:hover{
     box-shadow: 0 0 10px 0 rgba(44, 74, 102, 0.8);
 }
 .nav-data form input[type="submit"]:focus{
     outline: none;
+    box-shadow: 0 0 10px 0 rgba(44, 74, 102, 0.8);
 }
 .nav-data form input:focus, select:focus{
     outline: 1px solid var(--blue);
@@ -197,10 +203,11 @@ footer section .corpInfo{
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 25px;
-    height: 70px;
+    top: 15px;
+    height: 68px;
     overflow: hidden;
     transition: all 0.2s ease-in;
+    border-radius: 8px;
 }
 .box_date_info{
     display: flex;
@@ -229,17 +236,19 @@ footer section .corpInfo{
 .s_boxLocation{
     display: flex;
     flex-direction: row;
-    padding: 40px 80px;
+    padding: 40px 0px;
     gap: 60px;
+    width: 80%;
+    margin-inline-start: 10%;
 }
 .s_boxLocation .wrapper{
-    width: 100%;
+    width: 80%;
     margin: 0;
     padding: 30px 50px;
     border-radius: 10px;
 }
 .smallbtn{
-    margin-inline-start: 200px; 
+    margin-inline-start: 120px; 
     color: var(--line);
 }
 .smallbtn:hover{
@@ -311,4 +320,84 @@ footer section .corpInfo{
 .btnDetail a:focus{
     outline: none;
     border: none;
+}
+.boxListAttendance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxListAttendance figure{
+    width: 30%;
+}
+.tAttendance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tAttendance .t_operator{
+    width: 650px;
+    height: 450px;
+}
+.tAttendance table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+    margin-left: 0;
+}
+.tAttendance table thead th{
+    background: var(--blue);
+    color: white;
+    padding: 15px 10px;
+}
+.tAttendance table tr td{
+    border: 1px solid var(--line);
+    color: rgb(39, 39, 39);
+    font-weight: 300;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+.tAttendance table tr td:nth-child(1){
+    text-align: center;
+}
+.tAttendance table tr td:nth-child(4){
+    text-align: center;
+}
+.pagination ul {
+    display: flex;
+    border-radius: 5px;
+    margin-block-start: 40px;
+    text-align: center;
+    padding-inline-start: 0;
+    background: var(--blue);
+    color: white;
+}
+.pagination ul li:nth-child(1){
+    border-radius: 5px 0 0 5px;
+}
+.pagination ul li:nth-last-child(1){
+    border-radius: 0 5px 5px 0;
+}
+.t_operator table tr:hover{
+    background: rgba(42, 58, 70, 0.056);
+    cursor: pointer;
+}
+.pagination ul li a{
+    display: inline-block;
+    padding: 14px 18px;
+    color: white;
+}
+.pagination ul li a:hover{
+    background: rgb(62, 62, 165);
+    color: white;
+}
+.pagination ul li a:focus{
+    background: rgb(62, 62, 165);
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+.pagination ul li a:active{
+    background: rgb(62, 62, 165);
+    color: white;
+    outline: none;
 }

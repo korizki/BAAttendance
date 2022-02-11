@@ -6,3 +6,16 @@ function showEditDate(){
     editPanel.style.height = "170px";
   }
 }
+// Copy nilai
+const btnDetail2 = document.getElementById('btndetail2');
+btnDetail2.addEventListener('click',function(){
+  const btn = document.getElementById('submit2');
+  btn.click();
+})
+
+const btnDetail3 = document.getElementById('btndetail3');
+btnDetail3.addEventListener('click',function(){
+  const btn3 = document.getElementById('submit3');
+  btn3.click();
+})
+
