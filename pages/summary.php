@@ -113,10 +113,12 @@
           </table>
           <div class="btnDetail">
             <form action= "newDetail2.php" method="get" target="_blank" style="display: none">
-              <input type="date" name="date2" id="name" value="<?php echo $date ?>">
+              <input type="date" name="date12" id="date12" value="<?php echo $date1 ?>">
+              <input type="date" name="date22" id="date22" value="<?php echo $date2 ?>">
               <select id="shift" name="shift2" value="<?php echo $shift ?>">
                 <option value="1" <?php if($shift == 1){echo "selected";} ?>>Shift 1</option>
                 <option value="2" <?php if($shift == 2){echo "selected";} ?>>Shift 2</option>
+                <option value="All" <?php if($shift == 'All'){echo "selected";} ?>>All</option>
 						  </select>
               <input type="submit" id="submit2" name="submit2" value="Submit" >
             </form>
@@ -173,10 +175,12 @@
           </table>
           <div class="btnDetail">
             <form action= "newDetail3.php" method="get" target="_blank" style="display: none">
-              <input type="date" name="date3" id="name" value="<?php echo $date ?>">
+              <input type="date" name="date13" id="date13" value="<?php echo $date1 ?>">
+              <input type="date" name="date23" id="date23" value="<?php echo $date2 ?>">
               <select id="shift" name="shift3" value="<?php echo $shift ?>">
                 <option value="1" <?php if($shift == 1){echo "selected";} ?>>Shift 1</option>
                 <option value="2" <?php if($shift == 2){echo "selected";} ?>>Shift 2</option>
+                <option value="All" <?php if($shift == 'All'){echo "selected";} ?>>All</option>
 						  </select>
               <input type="submit" id="submit3" name="submit3" value="Submit" >
             </form>

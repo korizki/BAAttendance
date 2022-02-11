@@ -18,11 +18,16 @@
   ?>  
   <?php
     $limit = 10;
-    $sql = "SELECT DISTINCT ID_PEKERJA, DATE_ABSEN, DTIME_ABSEN, STATUS, SHIFT, T_PEKERJA.NAMA, T_PEKERJA.JABATAN FROM T_FINGER INNER JOIN T_PEKERJA ON T_FINGER.ID_PEKERJA = T_PEKERJA.ID WHERE  T_FINGER.SHIFT = '$shift' AND T_FINGER.STATUS = 0 AND T_FINGER.DATE_ABSEN = '$date' AND (T_PEKERJA.JABATAN = 'BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'GRADER PIT 3' OR T_PEKERJA.JABATAN = 'DOZER PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'FOREMAN LAPANGAN PIT 3')";  
+    // jika shift All query berubah
+    if ($shift == 'All'){
+      $sql = "SELECT DISTINCT ID_PEKERJA, DATE_ABSEN, DTIME_ABSEN, STATUS, SHIFT, T_PEKERJA.NAMA, T_PEKERJA.JABATAN FROM T_FINGER INNER JOIN T_PEKERJA ON T_FINGER.ID_PEKERJA = T_PEKERJA.ID WHERE T_FINGER.STATUS = 0 AND T_FINGER.DATE_ABSEN BETWEEN '$date13' AND '$date23' AND (T_PEKERJA.JABATAN = 'BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'GRADER PIT 3' OR T_PEKERJA.JABATAN = 'DZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'FOREMAN LAPANGAN PIT 3')";
+    } else {
+      $sql = "SELECT DISTINCT ID_PEKERJA, DATE_ABSEN, DTIME_ABSEN, STATUS, SHIFT, T_PEKERJA.NAMA, T_PEKERJA.JABATAN FROM T_FINGER INNER JOIN T_PEKERJA ON T_FINGER.ID_PEKERJA = T_PEKERJA.ID WHERE  T_FINGER.SHIFT = '$shift' AND T_FINGER.STATUS = 0 AND T_FINGER.DATE_ABSEN BETWEEN '$date13' AND '$date23' AND (T_PEKERJA.JABATAN = 'BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'GRADER PIT 3' OR T_PEKERJA.JABATAN = 'DZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'FOREMAN LAPANGAN PIT 3')";  
+    }
     $rs_result = mysqli_query($connect, $sql);  
     $row = mysqli_fetch_row($rs_result);  
     $total_records = $row[0];  
-    $total_pages = ceil($total_records / $limit); 
+    $total_pages = ceil($total_records / $limit);
   ?>
 
   <div class="wrapper" style="margin: 60px 10%; padding: 40px 50px;">
@@ -52,7 +57,11 @@
                 $total_halaman = ceil($jumlah_data / $limit);
   
                 // load data dari database
-                $data_absen = mysqli_query($connect, "SELECT DISTINCT ID_PEKERJA, DATE_ABSEN, DTIME_ABSEN, STATUS, SHIFT, T_PEKERJA.NAMA, T_PEKERJA.JABATAN FROM T_FINGER INNER JOIN T_PEKERJA ON T_FINGER.ID_PEKERJA = T_PEKERJA.ID WHERE  T_FINGER.SHIFT = '$shift' AND T_FINGER.STATUS = 0 AND T_FINGER.DATE_ABSEN = '$date' AND (T_PEKERJA.JABATAN = 'BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'GRADER PIT 3' OR T_PEKERJA.JABATAN = 'DOZER PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'FOREMAN LAPANGAN PIT 3') ORDER BY T_PEKERJA.JABATAN, T_PEKERJA.NAMA ASC LIMIT $halaman_awal, $limit");
+                $data_absen = mysqli_query($connect, "SELECT DISTINCT ID_PEKERJA, DATE_ABSEN, DTIME_ABSEN, STATUS, SHIFT, T_PEKERJA.NAMA, T_PEKERJA.JABATAN FROM T_FINGER INNER JOIN T_PEKERJA ON T_FINGER.ID_PEKERJA = T_PEKERJA.ID WHERE  T_FINGER.SHIFT = '$shift' AND T_FINGER.STATUS = 0 AND T_FINGER.DATE_ABSEN BETWEEN '$date13' AND '$date23' AND (T_PEKERJA.JABATAN = 'BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'GRADER PIT 3' OR T_PEKERJA.JABATAN = 'DZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'FOREMAN LAPANGAN PIT 3') ORDER BY T_PEKERJA.JABATAN, T_PEKERJA.NAMA ASC LIMIT $halaman_awal, $limit");
+                // jika shift = All
+                if ($shift == 'All'){
+                  $data_absen = mysqli_query($connect, "SELECT DISTINCT ID_PEKERJA, DATE_ABSEN, DTIME_ABSEN, STATUS, SHIFT, T_PEKERJA.NAMA, T_PEKERJA.JABATAN FROM T_FINGER INNER JOIN T_PEKERJA ON T_FINGER.ID_PEKERJA = T_PEKERJA.ID WHERE T_FINGER.STATUS = 0 AND T_FINGER.DATE_ABSEN BETWEEN '$date13' AND '$date23' AND (T_PEKERJA.JABATAN = 'BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'GRADER PIT 3' OR T_PEKERJA.JABATAN = 'DZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU BELAZ PIT 3' OR T_PEKERJA.JABATAN = 'PEMANDU SHOVEL PIT 3' OR T_PEKERJA.JABATAN = 'FOREMAN LAPANGAN PIT 3') ORDER BY T_PEKERJA.JABATAN, T_PEKERJA.NAMA ASC LIMIT $halaman_awal, $limit");
+                }
                 $no = $halaman_awal + 1;
                 while($row = mysqli_fetch_array($data_absen)){
                   ?>
@@ -71,17 +80,17 @@
         <nav class="pagination">
           <ul>
             <li class="pagination-item">
-              <a class="pagination-link" <?php if($halaman > 1){echo "href='?page=$prev&date3=$date&shift3=$shift&submit3=Submit'";}?>><i class="fa fa-angle-left" style="margin-right: 0"></i></a>
+              <a class="pagination-link" <?php if($halaman > 1){echo "href='?page=$prev&date13=$date13&date23=$date23&shift3=$shift&submit3=Submit'";}?>><i class="fa fa-angle-left" style="margin-right: 0"></i></a>
             </li>
             <?php 
               for($x=1; $x<=$total_halaman; $x++){
                 ?>
-                  <li class="pagination-item"><a class="pagination-link" href="?page=<?php echo $x; ?>&date3=<?php echo $date ?>&shift3=<?php echo $shift ?>&submit3=Submit"><?php echo $x?></a></li>
+                  <li class="pagination-item"><a class="pagination-link" href="?page=<?php echo $x; ?>&date13=<?php echo $date13 ?>&date23=<?php echo $date23?>&shift3=<?php echo $shift ?>&submit3=Submit"><?php echo $x?></a></li>
                 <?php
               }
             ?>
             <li class="pagination-item">
-              <a class="pagination-item" <?php if($halaman < $total_halaman){ echo "href='?page=$next&date3=$date&shift3=$shift&submit3=Submit'";}?>><i class="fa fa-angle-right" style="margin-right: 0"></i></a>
+              <a class="pagination-item" <?php if($halaman < $total_halaman){ echo "href='?page=$next&date13=$date13&date23=$date23&shift3=$shift&submit3=Submit'";}?>><i class="fa fa-angle-right" style="margin-right: 0"></i></a>
             </li>
           </ul>
         </nav>

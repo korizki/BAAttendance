@@ -157,10 +157,6 @@
     $r_opt_FM_2 = mysqli_num_rows($q_r_opt_FM_2);
     $r_opt_FM_3 = mysqli_num_rows($q_r_opt_FM_3);
     
-    // Load Data Operator
-    if(isset($_GET['submit2'])){
-        $date = $_GET['date2'];
-        $shift = $_GET['shift2'];
-      }
+    
           
 ?>
