@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attandance Monitoring - Bukit Asam</title>
-	 	<link rel="icon" href="assets/images/logo.png">
+	<link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/styles/index.css" />
-		<link rel="stylesheet" href="assets/styles/responsive.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<script defer src="assets/scripts/script.js"></script>
+	<link rel="stylesheet" href="assets/styles/responsive.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="manifest" href="manifest.webmanifest"></link>
+	<script defer src="assets/scripts/script.js"></script>
+
 </head>
 <body id="summary">
 	<nav>
