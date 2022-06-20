@@ -3,21 +3,34 @@
   body{
     font-size: 15px;
   }
+  html{
+    font-size: 14px;
+  }
   .nav_icon{
-    height: 45px;
-    top: 18px;
-    left: 25px;
+    height: 35px;
+  }
+  nav{
+    padding: 20px;
+  }
+  nav >a{
+    display: none;
   }
   .headertext{
     margin-block-start: 0px;
     gap: 20px;
-    padding: 0 25px;
+    padding: 0 15px;
   }
   .headertext > h1{
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
     margin-block-start: 0;
     line-height: 1.5;
+  }
+  .headertext>h2{
+    font-size: 2.2rem;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
   }
   .headertext > h1 > span{
     padding: 15px;
@@ -25,7 +38,7 @@
   .headertext > p{
     text-align: center;
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   .jumbotron figure {
     width: 100%;
@@ -34,14 +47,51 @@
   }
   .jumbotron{
     flex-direction: column-reverse;
+    padding: 30px 5%;
+  }
+  .jumbotron > img{
+    width: 100%;
   }
   .btnblue{
-    display: block;
+    padding: 11px 22px;
+    font-size: 0.9rem;
     width: 100%;
     text-align: center;
   }
   body section{
     padding: 0px;
+  }
+  .mainsection{
+    padding: 30px 15px;
+  }
+  .mainsection>h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .usefull{
+    margin-top: 20px;
+  }
+  .usefull>div{
+    padding: 15px;
+    min-width: 250px;
+  }
+  .caps>p{
+    font-size: 0.9rem;
+  }
+  .contactbox{
+    padding: 50px 15px;
+  }
+  .contactbox>h1{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .contactbox>p{
+    font-size: 1rem;
+  }
+  .contactbox > button{
+    font-size: 1rem;
+    padding: 12px 50px;
   }
   .wrapper{
     width: 90%;
@@ -81,6 +131,10 @@
   .corpInfo figure{
     margin: auto;
     margin-block-end: 25px;
+  }
+  footer>div{
+    flex-direction: column;
+    gap: 50px;
   }
   /* Halaman Summary */
   .page_title h1{
@@ -189,50 +243,5 @@
   .pagination ul li a{
     padding: 8px 10px;
     font-size: 0.5rem;
-  }
-}
-
-/* tampilan responsive mobile 375px */
-@media screen and (max-width: 375px){
-  .nav_icon{
-    height: 35px;
-  }
-  .headertext > h1{
-    font-size: 2.2rem;
-    line-height: 1.5;
-  }
-  .headertext > p{
-    font-size: 1.1em;
-  }
-  footer{
-    font-size: 0.9rem;
-  }
-  /* Halaman Summary */
-  .s_date_info p{
-    font-size: 1rem;
-  }
-  .s_date_info{
-    padding: 10px;
-    height: 68px;
-    border-radius: 6px;
-  }
-  .smallbtn{
-    margin-inline-start: 50px;
-  }
-  .s_boxLocation{
-    padding: 17px;
-    width: 100%;
-    margin-inline-start: 0;
-  }
-  .s_boxLocation .wrapper{
-    padding: 15px 20px;
-    border-radius: 7px;
-  }
-  .s_boxLocation .wrapper h1{
-    font-size: 1.1rem;
-    padding-block-end: 12px;
-  }
-  .s_boxLocation table tr td{
-    font-size: 0.8rem;
   }
 }
