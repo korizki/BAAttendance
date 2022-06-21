@@ -10,13 +10,13 @@
 	<link rel="stylesheet" href="assets/styles/responsive.css" />
 	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 	<meta name="description" content="Aplikasi untuk memantau dan memonitoring kehadiran operator dalam kegiatan penambangan PT. Bukit Asam Tbk.">
-	<script defer src="assets/scripts/script.js"></script>
+	<!-- <script defer src="assets/scripts/script.js"></script> -->
 </head>
 <body id="summary">
 	<header class=headersection>
 		<nav>
-			<img class="nav_icon" src="assets/images/logoptba.png" alt="logo_ptba">
-			<a href="#"><i class="fi fi-rr-user adjust"></i> Log In </a>
+			<img width=auto height=40 class="nav_icon" src="assets/images/logoptba.png" alt="logo_ptba">
+			<a href="./pages/login.php"><i class="fi fi-rr-user adjust"></i> Log In </a>
 		</nav>
 		<div class="jumbotron">
 			<div class="headertext">
@@ -25,7 +25,7 @@
 				<p>The Attendance Report System is an easy tool which helps you to monitor the arrival and departure of each worker, have information about the plan and eligibility realization of attendance ever day, week and month.</p>	
 				<a href="#login" class="btnblue"><i class="fi fi-rr-search adjust"></i> Check Attendance Data </a>
 			</div>
-			<img src="assets/images/homeillus.svg" alt="illustration">
+			<img width=700 height=auto src="assets/images/homeillus.svg" alt="illustration">
 		</div>
 	</header>
 	<main>
@@ -34,7 +34,7 @@
 			<div class="usefull">
 				<div>
 					<figure>
-						<img src="./assets/images/target.png" alt="icontarget">
+						<img width=50 height=50 src="./assets/images/target.png" alt="icontarget">
 					</figure>
 					<figcaption class="caps">
 						<h3>Keep Track of Attendance</h3>
@@ -43,7 +43,7 @@
 				</div>
 				<div>
 					<figure>
-						<img src="./assets/images/money-bag.png" alt="icontarget">
+						<img width=50 height=50 src="./assets/images/money-bag.png" alt="icontarget">
 					</figure>
 					<figcaption class="caps">
 						<h3>Improve Productivity</h3>
@@ -52,7 +52,7 @@
 				</div>
 				<div>
 					<figure>
-						<img src="./assets/images/idea.png" alt="icontarget">
+						<img width=50 height=50 src="./assets/images/idea.png" alt="icontarget">
 					</figure>
 					<figcaption class="caps">
 						<h3>Know Plan & Realization</h3>
@@ -64,7 +64,7 @@
 		<div class="contactbox" id="login">
 			<h1>Manage attendance of your company in an easy way.</h1>
 			<p>Already have an account, please Log In</p>
-			<button><i class="fi fi-rr-user adjust"></i> Log In</button>
+			<a href="./pages/login.php"><i class="fi fi-rr-user adjust"></i> Log In</a>
 		</div>
 	</main>
 	<footer>
@@ -72,7 +72,7 @@
 			<div class='corpInfo resource'>
 				<h1>Corporate Info</h1>
 				<figure>
-					<img src="assets/images/logoptba.png" alt="ptba.png">
+					<img  width=auto height=40 src="assets/images/logoptba.png" alt="ptba.png">
 				</figure>
 				<p><i class="fi fi-rr-marker" style="display: inline-block; transform: translate(-5px, 1px)"></i> Jl. Parigi No.1, Tanjung Enim, Sumatera Selatan</p>
 				<p><i class="fi fi-rr-envelope" style="display: inline-block; transform: translate(-5px, 2px)"></i> corsec@ptba.co.id</p>

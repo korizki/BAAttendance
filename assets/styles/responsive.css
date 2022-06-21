@@ -19,6 +19,7 @@
     margin-block-start: 0px;
     gap: 20px;
     padding: 0 15px;
+    transform: translateY(-50px);
   }
   .headertext > h1{
     font-size: 2rem;
@@ -119,7 +120,7 @@
   }
   footer{
     flex-direction: column;
-    padding: 25px;
+    padding: 7px;
     text-align: center;
     gap: 30px;
     font-size: 1rem;
@@ -131,6 +132,9 @@
   .corpInfo figure{
     margin: auto;
     margin-block-end: 25px;
+  }
+  footer>p{
+    padding-top: 18px;
   }
   footer>div{
     flex-direction: column;
@@ -151,6 +155,47 @@
     text-align: center;
     top: 8px;
   }
+  /* loginstyle  */
+
+  .loginmain{
+    position: relative;
+  }
+  .loginmain>div{
+    flex-direction: column;
+  }
+  .loginmain>div>aside{
+    padding: 0px 15px;
+  }
+  .loginmain>div>aside>figure{
+    padding-top: 30px;
+  }
+  .loginmain>div>aside>figure>figcaption{
+    transform: translateY(20px);
+    margin: 0 0 20px 0;
+  }
+  .loginmain>div>aside>figure>figcaption>h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .loginmain>div>aside>figure>figcaption>p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .loginmain>div>aside>figure>img{
+    width: 100%;
+  }
+  .loginbox{
+    padding: 50px 15px;
+  }
+  .forminput{
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+  .forminput>p{
+    line-height: 1.7;
+    text-align: center;
+  }
+
   .box_date_info{
     display: block;
   }

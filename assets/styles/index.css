@@ -3,6 +3,8 @@
 *{
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -19,10 +21,6 @@ a{
     --grey: rgb(99, 99, 99);
     --red: rgb(243, 51, 51);
     --line: rgba(177, 177, 177, 0.378);
-}
-body{
-    padding: 0;
-    margin: 0;
 }
 body section{
     width: 100%;
@@ -125,7 +123,8 @@ nav a:hover{
 .contactbox>h1{
     margin-top: 0;
 }
-.contactbox button{
+.contactbox a{
+    display: inline-block;
     padding: 15px 50px;
     border: 3px solid rgb(73, 164, 248);
     background: var(--blue);
@@ -135,7 +134,7 @@ nav a:hover{
     font-weight: 600;
     transition: all 0.4s ease;
 }
-.contactbox button:hover{
+.contactbox a:hover{
     background: rgb(73, 164, 248);
     color: var(--blue)
 }
@@ -250,7 +249,7 @@ button{
 }
 footer{
     background: rgb(3, 43, 70);
-    color: white;
+    color: rgb(224, 224, 224);
     padding: 80px 5%;
     padding-bottom: 15px;
 }
@@ -276,10 +275,9 @@ footer>div>div{
     padding: 10px 20px;
     width: auto;
     margin: 20px 0 10px 0;
-    box-shadow: 0 0 5px 0 white;
 }
 footer>p{
-    border-top: 2px solid white;
+    border-top: 2px solid rgb(231, 231, 231);
     padding-top: 25px;
 }
 .resource>h1, .corpInfo>h1{
@@ -300,6 +298,120 @@ footer>p{
 }
 .svg-inline--fa{
     margin-right: 10px;
+}
+/* page login */
+.loginmain>div>aside{
+    flex: 2;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginmain>div>aside>figure{
+    flex-direction: column;
+}
+.loginmain>div>aside>figure>img{
+    transform: translateY(-20px);
+}
+.loginmain>div>aside>figure>figcaption{
+    transform: translateY(50px);
+}
+.loginmain>div>aside>figure>figcaption>h1{
+    font-size: 3rem;
+    padding: 15px;
+    color: var(--blue);
+}
+.loginmain>div>div{
+    flex: 1.5;
+    background: white;
+    height: 100%;
+}
+.loginmain{
+    background: rgb(245, 245, 245);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.loginmain>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.loginbox{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.loginbox>div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.329);
+}
+.loginbox>div>h2{
+    background: linear-gradient(to right, #29235f, #47418d, #29235f);
+    padding: 20px;
+    text-align:center;
+    width: 100%;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+.forminput{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 40px 40px;
+    gap: 24px;
+    color: var(--blue);
+}
+.forminput>div>label{
+    display: block;
+    margin-bottom: 8px;
+}
+.forminput>div>input{
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid var(--line);
+    width: 100%;
+}
+.forminput>a{
+    display: block;
+    padding: 16px 32px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    background: var(--blue);
+}
+.forminput>.warning{
+    padding: 12px 24px;
+    border: 1px solid rgb(230, 41, 41);
+    border-radius: 5px;
+    color: rgb(230, 41, 41);
+    background: rgba(255, 0, 0, 0.070);
+}
+.forminput>a:hover{
+    box-shadow: 0 0 10px var(--grey);
+}
+.forminput>p{
+    font-size: 0.9rem;
+    color: rgba(128, 128, 128, 0.8);
+}
+.loginbox>a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px 12px;
+    font-weight: 600;
+}
+.loginbox>a:hover{
+    color: var(--blue);
 }
 /* Pages Summary */
 .page_title h1{
