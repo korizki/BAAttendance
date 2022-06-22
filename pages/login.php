@@ -46,7 +46,7 @@
                             <label for="password">Password</label>
                             <input type="text" id="password" name="password">
                         </div>
-                        <a href=""><i class="fi fi-rr-sign-out adjust"></i> Log In</a>
+                        <a href="./main.php"><i class="fi fi-rr-sign-out adjust"></i> Log In</a>
                         <p>Not registered or forgot password? Please contact your System Administrator</p>
                     </form>
                 </div>
