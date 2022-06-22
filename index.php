@@ -64,7 +64,7 @@
 		<div class="contactbox" id="login">
 			<h1>Manage attendance of your company in an easy way.</h1>
 			<p>Already have an account, please Log In</p>
-			<a href="./pages/login.php"><i class="fi fi-rr-user adjust"></i> Log In</a>
+			<a href="./pages/login.php"><i class="fi fi-rr-sign-out adjust"></i> Log In</a>
 		</div>
 	</main>
 	<footer>
@@ -83,6 +83,7 @@
 				<h1>Resources</h1>
 				<p><a href="https://storyset.com/" >Illustration by Storyset</a></p>
 				<p><a href="https://flaticon.com/" >Icons by Flaticon</a></p>
+				<p><a href="https://uigradients.com/">Color Gradients by uigradients</a></p>
 			</div>
 		</div>
 		<p style="text-align: center">Copyright &copy; 2022. PT. Bukit Asam Tbk.</p>

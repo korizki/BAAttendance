@@ -64,7 +64,7 @@ nav a:hover{
 }
 .headertext > h1{
     font-size: 3em;
-    margin-block-end: 0;
+    margin-top: 40px;
     font-weight: 600;
     color: var(--blue);
 }
@@ -75,11 +75,16 @@ nav a:hover{
     margin: 20px 0 30px 0px;
     background: var(--red)
 }
+.headertext>p{
+    color: rgb(58, 58, 58) !important;
+    margin: 30px 0;
+}
 .mainsection{
     padding: 50px 10%;
 }
 .mainsection>h1{
     margin-bottom: 60px;
+    color: var(--blue);
 }
 .usefull{
     display: flex;
@@ -121,22 +126,22 @@ nav a:hover{
     font-size: 1.2rem;
 }
 .contactbox>h1{
-    margin-top: 0;
+    margin: 0 0 25px 0;
 }
 .contactbox a{
     display: inline-block;
     padding: 15px 50px;
-    border: 3px solid rgb(73, 164, 248);
-    background: var(--blue);
-    color: white;
+    background: white;
+    border-radius: 5px;
+    color: var(--blue);
     font-size: 1.2rem;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 600;
     transition: all 0.4s ease;
 }
 .contactbox a:hover{
     background: rgb(73, 164, 248);
-    color: var(--blue)
+    color: white;
 }
 .mainsection>h1{
     font-size: 2.5rem;
@@ -166,7 +171,7 @@ button{
     background:rgba(18, 44, 70, 0.884);
     color: white;
     display: inline-block;
-    padding: 19px 38px;
+    padding: 16px 32px;
     font-size: 1em;
     border-radius: 6px;
     margin-top: 20px;
@@ -248,8 +253,7 @@ button{
     box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.275); 
 }
 footer{
-    background: rgb(3, 43, 70);
-    color: rgb(224, 224, 224);
+    color: rgb(39, 39, 39);
     padding: 80px 5%;
     padding-bottom: 15px;
 }
@@ -269,28 +273,31 @@ footer>div>div{
     flex: 1;
 }
 .corpInfo img{
-    height: 50px;
-    background: white;
-    border-radius: 7px;
-    padding: 10px 20px;
+    height: 60px;
+    padding: 10px 0px;
     width: auto;
     margin: 20px 0 10px 0;
 }
 footer>p{
-    border-top: 2px solid rgb(231, 231, 231);
-    padding-top: 25px;
+    border-top: 1px solid rgba(65, 65, 65, 0.178);
+    padding-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 .resource>h1, .corpInfo>h1{
     display: inline-block;
     margin-bottom: 20px;
 }
 .resource>p>a{
-    color: white;
+    color: rgb(39, 39, 39) !important;
+}
+.resource>p{
+    margin-bottom: 12px;
 }
 .corpInfo p{
     font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 10px; 
+    font-size: 0.9rem;
+    margin: 0 0 10px 5px; 
 }
 .corpInfo{
     display: inline-block;

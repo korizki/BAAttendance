@@ -120,7 +120,7 @@
   }
   footer{
     flex-direction: column;
-    padding: 7px;
+    padding: 30px 15px 15px 30px;
     text-align: center;
     gap: 30px;
     font-size: 1rem;
@@ -134,7 +134,8 @@
     margin-block-end: 25px;
   }
   footer>p{
-    padding-top: 18px;
+    padding-top: 15px;
+    margin-top: 25px;
   }
   footer>div{
     flex-direction: column;
