@@ -764,3 +764,48 @@ footer>p{
     margin: 30px 10%; 
     padding: 40px 50px;
 }
+.searchContent>h1{
+    color: var(--blue);
+}
+.datebox{
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px 0 rgba(128, 128, 128, 0.1);
+    padding: 20px 40px;
+}
+.datebox>form{
+    display: flex;
+    gap: 35px;
+}
+.datebox>form>div>input{
+    padding: 8px 16px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+    margin-left: 10px;
+    background: rgba(128, 128, 128, 0.08);
+}
+.datebox>form>button{
+    padding: 8px 16px;
+    padding-left: 20px;
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    color: white;
+    border-radius: 5px;
+}
+.datebox>form>button:hover, .datebox>form>button:focus{
+    outline: none;
+    box-shadow: 0 0 6px 0 var(--blue);
+}
+#illussearch{
+    text-align: center;
+    margin: 40px auto;
+    color: var(--blue);
+}
+#illussearch>figcaption{
+    margin-bottom: 20px;
+}
+#illussearch>figcaption>p{
+    margin-top: 12px;
+    opacity: 0.5;
+}

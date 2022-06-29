@@ -380,4 +380,36 @@
   .box:hover{
     transform: translateY(0px);
   }
+  .datebox{
+    margin-top: 15px;
+    padding: 15px;
+  }
+  .datebox>form{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .datebox>form>div{
+    display: flex;
+    flex-direction: column;
+  }
+  .datebox>form>div>input{
+    margin-left: 0;
+    margin-top: 9px;
+  }
+  .datebox>form>button{
+    padding: 10px 16px;
+  }
+  #illussearch{
+    margin: 30px 0;
+  }
+  #illussearch>figcaption{
+    font-size: 14px;
+  }
+  #illussearch>figcaption>p{
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+  #illussearch>img{
+    width: 100%;
+  }
 }
