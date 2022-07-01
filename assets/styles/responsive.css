@@ -412,4 +412,17 @@
   #illussearch>img{
     width: 100%;
   }
+  .headerr{
+    flex-direction: column;
+  }
+  .pitcontent>h3{
+    text-align: center;
+  }
+  .pitcontent>div{
+    gap: 0;
+    row-gap: 20px;
+  }
+  .graphbo{
+    margin-top: 20px;
+  }
 }

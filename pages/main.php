@@ -22,7 +22,7 @@
                 <img src="../assets/images/iconsearch.png" width="30" height="30" alt="icon">
                 <p>Search</p>
             </a>
-            <a class="itemnav">
+            <a href="../index.php" class="itemnav">
                 <img src="../assets/images/iconlogoff.png"  width="30" height="30" alt="icon">
                 <p>Log Out</p>
             </a>
@@ -35,6 +35,9 @@
                         break;
                     case 'search':
                         include "searchData.php";
+                        break;
+                    case 'summary' : 
+                        include "summary.php";
                         break;
                     default : 
                         include "mainsum.php";
