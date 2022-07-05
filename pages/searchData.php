@@ -1,7 +1,7 @@
 <main class="searchContent">
     <h1>Search Data</h1>
     <div class="datebox">
-        <form action="#" method="get">
+        <form action="../code/direct.php" method="get">
             <div>
                 <label for="startdate">Start Date</label>
                 <input type="date" id="startdate" name="startdate" required>            
@@ -21,7 +21,7 @@
                     }
                 })
             </script>
-            <button type="submit" id="btnsearch"><i class="fi fi-rr-search adjust"></i> Collect Data</button>
+            <button type="submit" id="btnsearch" name="search"><i class="fi fi-rr-search adjust"></i> Collect Data</button>
         </form>
     </div>
     <figure id="illussearch">

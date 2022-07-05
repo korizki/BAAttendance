@@ -39,6 +39,9 @@
                     case 'summary' : 
                         include "summary.php";
                         break;
+                    case 'details' : 
+                        include "details.php";
+                        break;
                     default : 
                         include "mainsum.php";
                         break;

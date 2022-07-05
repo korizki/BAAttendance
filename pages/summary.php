@@ -3,7 +3,7 @@
     <div class="sumbox min">
         <div class="headerr">
             <h2>Area PIT 2</h2>
-            <a href="#"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
+            <a href="?page=details"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
         </div>
         <div class="pitcontent">
             <h3>Attendance Summary</h3>
@@ -19,7 +19,7 @@
     <div class="sumbox min">
     <div class="headerr">
             <h2>Area PIT 3</h2>
-            <a href="#"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
+            <a href="?page=details"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
         </div>
         <div class="pitcontent">
             <h3>Attendance Summary</h3>
