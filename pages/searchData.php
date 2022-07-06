@@ -1,4 +1,9 @@
 <main class="searchContent">
+    <script>
+        document.querySelector('.itemnav').style.opacity = "0.5";
+        const active = document.getElementById('search')
+        active.style.opacity = 1;
+    </script>
     <h1>Search Data</h1>
     <div class="datebox">
         <form action="../code/direct.php" method="get">

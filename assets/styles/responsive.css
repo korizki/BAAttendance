@@ -314,6 +314,8 @@
   }
   .itemnav:hover{
     background: none;
+    opacity: 1;
+    border-left: 0 solid var(--blue);
   }
   .itemnav>img{
     width: 20px;

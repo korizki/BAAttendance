@@ -23,7 +23,7 @@
 				<h1>Easy to Monitoring</h1>
 				<h2>Workers Attendance</h2> 
 				<p>The Attendance Report System is an easy tool which helps you to monitor the arrival and departure of each worker, have information about the plan and eligibility realization of attendance ever day, week and month.</p>	
-				<a href="#login" class="btnblue"><i class="fi fi-rr-search adjust"></i> Check Attendance Data </a>
+				<a href="#login" class="btnblue"><i class="fi fi-rr-search-alt adjust"></i> Check Attendance Data </a>
 			</div>
 			<img width=700 height=auto src="assets/images/homeillus.svg" alt="illustration">
 		</div>
@@ -64,7 +64,7 @@
 		<div class="contactbox" id="login">
 			<h1>Manage attendance of your company in an easy way.</h1>
 			<p>Already have an account, please Log In</p>
-			<a href="./pages/login.php"><i class="fi fi-rr-sign-out adjust"></i> Log In</a>
+			<a href="./pages/login.php"><i class="fi fi-rr-sign-in-alt adjust"></i> Log In</a>
 		</div>
 	</main>
 	<footer>

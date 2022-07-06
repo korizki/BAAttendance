@@ -1,3 +1,13 @@
+<?php 
+    // mengecek apakah ada sesi login user, 
+    if(isset($_SESSION['username'])){
+        // jika tidak ada, arahkan ke halaman login
+        header('Location: login.php');
+    } else {
+        session_start();
+        $username = $_SESSION['username'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +24,15 @@
     <div class="outboxmain">
         <nav>
             <img src="../assets/images/logoptba.png" height="40px" width="auto" alt="iconptba">
-            <a href="?page=home" class="itemnav">
+            <a href="?page=home" class="itemnav" id="home">
                 <img src="../assets/images/iconhome.png" width="30" height="30" alt="icon">
                 <p>Home</p>
             </a>
-            <a href="?page=search" class="itemnav">
+            <a href="?page=search" class="itemnav" id="search">
                 <img src="../assets/images/iconsearch.png" width="30" height="30" alt="icon">
                 <p>Search</p>
             </a>
-            <a href="../index.php" class="itemnav">
+            <a href="login.php?login-status=logout" class="itemnav">
                 <img src="../assets/images/iconlogoff.png"  width="30" height="30" alt="icon">
                 <p>Log Out</p>
             </a>

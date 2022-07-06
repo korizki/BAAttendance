@@ -27,7 +27,7 @@
                 <div>
                     <a href="#login" id="fail"></a>
                     <h2>Log In Form</h2>
-                    <form action="#" class="forminput">
+                    <form action="../code/processLogin.php" method="post" class="forminput">
                         <?php 
                             if(isset($_GET['login-status'])){
                                 if($_GET['login-status'] === 'failed'){
@@ -35,18 +35,24 @@
                                         <p class='warning'>Login Failed, wrong username or password!</p>
                                         <script>document.getElementById('fail').click()</script>
                                     ";
+                                } else if($_GET['login-status'] === 'logout'){
+                                    session_start();
+                                    session_destroy();
+                                    echo "
+                                        <script>alert('Log off success.') </script>
+                                    ";
                                 }
                             }
                         ?>
                         <div>
                             <label for="username">Username</label>
-                            <input type="text" id="username" name="username">
+                            <input type="text" id="username" name="username" required>
                         </div>
                         <div>
                             <label for="password">Password</label>
-                            <input type="text" id="password" name="password">
+                            <input type="password" id="password" name="password" required>
                         </div>
-                        <a href="./main.php"><i class="fi fi-rr-sign-out adjust"></i> Log In</a>
+                        <button type="submit" name="loginbtn"><i class="fi fi-rr-sign-in-alt adjust"></i> Log In</button>
                         <p>Not registered or forgot password? Please contact your System Administrator</p>
                     </form>
                 </div>
