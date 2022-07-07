@@ -1,9 +1,13 @@
 <main>
+    <!-- aktivasi navigasi -->
     <script>
         document.querySelector('.itemnav').style.opacity = "0.5";
         const active = document.getElementById('home')
         active.style.opacity = 1;
     </script>
+    <!-- process data untuk summary -->
+    <?php include "../code/processSummary.php" ?>
+
     <div class="sumhead">
         <img src="../assets/images/summary.svg" alt="illustration">
         <h1>Welcome back, <?php echo $_SESSION['username'] ?></h1>
@@ -15,12 +19,12 @@
         <div class="sumcontentbox">
             <div class="box">
                 <h3>Belaz - Hauler</h3>
-                <p>68</p>
+                <p><?php echo $belaz ?></p>
                 <img width=100 height=100 src="../assets/images/thai.png" alt="illus">
             </div>
             <div class="box">
                 <h3>Shovel - Loader</h3>
-                <p>14</p>
+                <p><?php echo $shovel ?></p>
                 <img width=100 height=100 src="../assets/images/thai.png" alt="illus">
             </div>
         </div>
@@ -29,28 +33,33 @@
         <h2>Total Manpower - Minning Support Unit</h2>
         <div class="sumcontentbox">
             <div class="box">
-                <h3>Bulldozer - APT</h3>
-                <p>18</p>
+                <h3>Bulldozer</h3>
+                <p><?php echo $dozer ?></p>
                 <img width=100 height=100 src="../assets/images/pakistani.png" alt="illus">
             </div>
             <div class="box">
-                <h3>Grader - APT</h3>
-                <p>9</p>
+                <h3>Grader</h3>
+                <p><?php echo $grader ?></p>
                 <img width=100 height=100 src="../assets/images/pakistani.png" alt="illus">
             </div>
             <div class="box">
-                <h3>PC200 - APT</h3>
-                <p>4</p>
+                <h3>Pemandu Belaz</h3>
+                <p><?php echo $pbelaz ?></p>
                 <img width=100 height=100 src="../assets/images/pakistani.png" alt="illus">
             </div>
             <div class="box">
-                <h3>Compac - APT</h3>
-                <p>5</p>
+                <h3>Pemandu Shovel</h3>
+                <p><?php echo $pshovel ?></p>
                 <img width=100 height=100 src="../assets/images/pakistani.png" alt="illus">
             </div>
             <div class="box">
-                <h3>Water Tank - APT</h3>
-                <p>4</p>
+                <h3>Foreman</h3>
+                <p><?php echo $foreman ?></p>
+                <img width=100 height=100 src="../assets/images/pakistani.png" alt="illus">
+            </div>
+            <div class="box">
+                <h3>Water Truck</h3>
+                <p><?php echo $wt ?></p>
                 <img width=100 height=100 src="../assets/images/pakistani.png" alt="illus">
             </div>
         </div>

@@ -1,11 +1,11 @@
 <?php 
     // mengecek apakah ada sesi login user, 
+    session_start();
     if(isset($_SESSION['username'])){
         // jika tidak ada, arahkan ke halaman login
-        header('Location: login.php');
-    } else {
-        session_start();
         $username = $_SESSION['username'];
+    } else {
+        header('Location: login.php');
     }
 ?>
 <!DOCTYPE html>

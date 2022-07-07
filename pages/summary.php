@@ -272,15 +272,15 @@
         // return `<p> ${item.name} </p>`
         data.push(`
         <div class="datt">
-            <h4><i class="fi fi-rr-business-time adjust"></i> ${item.name}</h4>
+            <h4><i class="fi fi-rr-user-time adjust"></i> ${item.name}</h4>
             <table>
                 <tr class="val">
                     <td>Plan </td>
-                    <td> ${item.plan} </td>
+                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
                 </tr>
                 <tr class="val">
                     <td>Realize </td>
-                    <td> ${item.realize} </td>
+                    <td> <span class="bullet bulgreen">${item.realize}</span> </td>
                 </tr>
             </table>
         </div>
@@ -290,15 +290,15 @@
         // return `<p> ${item.name} </p>`
         data2.push(`
         <div class="datt">
-            <h4><i class="fi fi-rr-business-time adjust"></i> ${item.name}</h4>
+            <h4><i class="fi fi-rr-user-time adjust"></i> ${item.name}</h4>
             <table>
                 <tr class="val">
                     <td>Plan </td>
-                    <td> ${item.plan} </td>
+                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
                 </tr>
                 <tr class="val">
                     <td>Realize </td>
-                    <td> ${item.realize} </td>
+                    <td> <span class="bullet bulgreen">${item.realize}</span> </td>
                 </tr>
             </table>
         </div>

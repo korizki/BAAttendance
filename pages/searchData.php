@@ -15,6 +15,13 @@
                 <label for="enddate">End Date</label>
                 <input type="date" id="enddate" name="enddate" required>            
             </div>
+            <div>
+                <label for="shift">Shift</label>
+                <select name="shift" id="shift" required>
+                    <option value="1">Shift 1</option>
+                    <option value="2">Shift 2</option>
+                </select>            
+            </div>
             <script>
                 const enddate = document.getElementById('enddate');
                 enddate.addEventListener('change', () => {
@@ -26,7 +33,7 @@
                     }
                 })
             </script>
-            <button type="submit" id="btnsearch" name="search"><i class="fi fi-rr-search adjust"></i> Collect Data</button>
+            <button type="submit" id="btnsearch" name="search"><i class="fi fi-rr-search adjust"></i><i class="fi fi-rr-search-alt adjust"></i> Collect Data</button>
         </form>
     </div>
     <figure id="illussearch">

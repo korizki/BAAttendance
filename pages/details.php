@@ -2,7 +2,7 @@
     <a href=?page=summary><i class="fi fi-rr-angle-left adjust"></i><span class="labelback">Back to summary</span></a>
     <h1>Details</h1>
     <div class="detailbox">
-        <h3>List of Attendance</h3>
+        <h3><i class="fi fi-rr-calendar adjust"></i> List of Attendance</h3>
         <p>Periode at 02 July 2022 - 02 July 2022</p>
         <table class="detailstable">
             <thead>

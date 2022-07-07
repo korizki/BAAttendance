@@ -15,6 +15,7 @@ ul {
 }
 #listdata, #listdata2{
     color: white;
+    
 }
 .datt{
     color: var(--blue);
@@ -455,6 +456,7 @@ footer>p{
     width: 100%;
     opacity: 0.5;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 .itemnav:hover{
     color: var(--blue);
@@ -543,7 +545,7 @@ footer>p{
 .box>p{
     font-size: 1.5rem;
     font-weight: 600;
-    color: rgb(19, 82, 175);
+    color: var(--blue);
 }
 .box>img{
     float:right;
@@ -790,12 +792,18 @@ footer>p{
     display: flex;
     gap: 35px;
 }
-.datebox>form>div>input{
+.datebox>form>div>input, .datebox>form>div>select {
     padding: 8px 16px;
     border: 1px solid rgba(128, 128, 128, 0.3);
     border-radius: 5px;
     margin-left: 10px;
     background: rgba(128, 128, 128, 0.08);
+}
+.datebox>form>div>input{
+    padding: 10px 16px;
+}
+.datebox>form>div>select:hover{
+    box-shadow: none;
 }
 .datebox>form>button{
     padding: 8px 16px;
@@ -911,6 +919,9 @@ summary, details{
     margin: 20px 0; 
     min-height: 700px;
 }
+.detailbox>h3{
+    padding-left: 10px;
+}
 .detailbox>p{
     opacity: 0.7;
     font-size: 0.8rem;
@@ -953,4 +964,16 @@ summary, details{
 }
 .detailstable>tbody>tr:hover{
     opacity: 1;
+}
+.bullet{
+    padding: 3px 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 0.7rem;
+}
+.bulblue{
+    background: rgba(38, 117, 235, 0.7);
+}
+.bulgreen{
+    background: rgba(12, 199, 12, 0.7);
 }
