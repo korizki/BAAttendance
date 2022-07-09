@@ -1,9 +1,16 @@
+<?php 
+    include "../code/processSummary.php"; 
+    $startdate = $_GET['startdate'];
+    $enddate = $_GET['enddate'];
+    $shift = $_GET['shift'];
+?>
+
 <main class="searchContent">
     <h1>Summary</h1>
     <div class="sumbox min">
         <div class="headerr">
             <h2>Area PIT 2</h2>
-            <a href="?page=details"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
+            <a href="?page=details&startdate=<?php echo $startdate?>&enddate=<?php echo $enddate ?>&shift=<?php echo $shift ?>&pit=2"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
         </div>
         <div class="pitcontent">
             <h3>Attendance Summary</h3>
@@ -19,7 +26,7 @@
     <div class="sumbox min">
     <div class="headerr">
             <h2>Area PIT 3</h2>
-            <a href="?page=details"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
+            <a href="?page=details&startdate=<?php echo $startdate?>&enddate=<?php echo $enddate ?>&shift=<?php echo $shift ?>&pit=3"><i class="fi fi-rr-info adjust"></i> Detail Attendance</a>
         </div>
         <div class="pitcontent">
             <h3>Attendance Summary</h3>
@@ -44,7 +51,7 @@
                 {
                 label: 'Realize',
                 data: [
-                    4,30,4,2,2,3,2
+                    <?php echo $realshovel2 ?>,<?php echo $realbelaz2 ?>,<?php echo $realpshovel2 ?>,<?php echo $realpbelaz2 ?>,<?php echo $realgrader2 ?>,<?php echo $realdozer2 ?>,<?php echo $realforeman2 ?>
                 ],
                 fill: true,
                 borderJoinStyle: "round",
@@ -72,7 +79,7 @@
             {
                 label: 'Plan',
                 data: [
-                    3,25,3,2,2,2,2
+                    <?php echo $planshovel2 ?>,<?php echo $planbelaz2 ?>,<?php echo $planpshovel2 ?>,<?php echo $planpbelaz2 ?>,<?php echo $plangrader2 ?>,<?php echo $plandozer2 ?>,<?php echo $planforeman2 ?>
                 ],
                 fill: true,
                 borderJoinStyle: "round",
@@ -121,7 +128,7 @@
                 {
                 label: 'Realize',
                 data: [
-                    4,30,4,2,2,3,2
+                    <?php echo $realshovel3 ?>,<?php echo $realbelaz3 ?>,<?php echo $realpshovel3 ?>,<?php echo $realpbelaz3 ?>,<?php echo $realgrader3 ?>,<?php echo $realdozer3 ?>,<?php echo $realforeman3 ?>
                 ],
                 fill: true,
                 borderJoinStyle: "round",
@@ -149,7 +156,7 @@
             {
                 label: 'Plan',
                 data: [
-                    3,25,3,2,2,2,2
+                    <?php echo $planshovel3 ?>,<?php echo $planbelaz3 ?>,<?php echo $planpshovel3 ?>,<?php echo $planpbelaz3 ?>,<?php echo $plangrader3 ?>,<?php echo $plandozer3 ?>,<?php echo $planforeman3 ?>
                 ],
                 fill: true,
                 borderJoinStyle: "round",
@@ -193,76 +200,77 @@
     const listData = [
         {
             name: "Operator Shovel",
-            plan: 4,
-            realize: 3
+            plan: <?php echo $planshovel2 ?>,
+            realize: <?php echo $realshovel2 ?>
         },
         {
             name: "Operator Belaz",
-            plan: 30,
-            realize: 25
-        },
-        {
-            name: "Pemandu Belaz",
-            plan: 3,
-            realize: 3
+            plan: <?php echo $planbelaz2 ?>,
+            realize: <?php echo $realbelaz2 ?>
         },
         {
             name: "Pemandu Shovel",
-            plan: 7,
-            realize: 6
+            plan: <?php echo $planpshovel2 ?>,
+            realize: <?php echo $realpshovel2?>
+        },
+        {
+            name: "Pemandu Belaz",
+            plan: <?php echo $planpbelaz2 ?>,
+            realize: <?php echo $realpbelaz2 ?>
         },
         {
             name: "Operator Grader",
-            plan: 3,
-            realize: 2
+            plan: <?php echo $plangrader2 ?>,
+            realize: <?php echo $realgrader2 ?>
         },
         {
             name: "Operator Dozer",
-            plan: 3,
-            realize: 3
+            plan: <?php echo $plandozer2 ?>,
+            realize: <?php echo $realdozer2 ?>
         },
         {
             name: "Foreman/GL",
-            plan: 2,
-            realize: 2
+            plan: <?php echo $planforeman2 ?>,
+            realize: <?php echo $realforeman2 ?>
         }
     ]    
     // pit 3
     const listData2 = [
         {
             name: "Operator Shovel",
-            plan: 4,
-            realize: 3
+            plan: <?php echo $planshovel3 ?>,
+            realize: <?php echo $realshovel3 ?>
         },
         {
             name: "Operator Belaz",
-            plan: 30,
-            realize: 25
-        },
-        {
-            name: "Pemandu Belaz",
-            plan: 3,
-            realize: 3
+            plan: <?php echo $planbelaz3 ?>,
+            realize: <?php echo $realbelaz3 ?>
         },
         {
             name: "Pemandu Shovel",
-            plan: 7,
-            realize: 6
+            plan: <?php echo $planpshovel3 ?>,
+            realize: <?php echo $realpshovel3 ?>
         },
         {
+            name: "Pemandu Belaz",
+            plan: <?php echo $planpbelaz3 ?>,
+            realize: <?php echo $realpbelaz3 ?>
+        },
+        
+        {
             name: "Operator Grader",
-            plan: 3,
-            realize: 2
+            plan: <?php echo $plangrader3 ?>,
+            realize: <?php echo $realgrader3 ?>
         },
         {
             name: "Operator Dozer",
-            plan: 3,
-            realize: 3
+            plan: <?php echo $plandozer3 ?>,
+            realize: <?php echo $realdozer3 ?>
         },
         {
             name: "Foreman/GL",
-            plan: 2,
-            realize: 2
+            plan: <?php echo $planforeman3 ?>,
+            realize: <?php echo $realforeman3 ?>
         }
     ]    
 
@@ -275,13 +283,14 @@
             <h4><i class="fi fi-rr-user-time adjust"></i> ${item.name}</h4>
             <table>
                 <tr class="val">
-                    <td>Plan </td>
-                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
-                </tr>
-                <tr class="val">
                     <td>Realize </td>
                     <td> <span class="bullet bulgreen">${item.realize}</span> </td>
                 </tr>
+                <tr class="val">
+                    <td>Plan </td>
+                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
+                </tr>
+                
             </table>
         </div>
         `)
@@ -293,13 +302,14 @@
             <h4><i class="fi fi-rr-user-time adjust"></i> ${item.name}</h4>
             <table>
                 <tr class="val">
-                    <td>Plan </td>
-                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
-                </tr>
-                <tr class="val">
                     <td>Realize </td>
                     <td> <span class="bullet bulgreen">${item.realize}</span> </td>
                 </tr>
+                <tr class="val">
+                    <td>Plan </td>
+                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
+                </tr>
+                
             </table>
         </div>
         `)

@@ -12,7 +12,7 @@
         <img src="../assets/images/summary.svg" alt="illustration">
         <h1>Welcome back, <?php echo $_SESSION['username'] ?></h1>
         <p>This page contain summary ot total Operator, Operator of <strong>Primary Mining Unit </strong> (Belaz and Shovel) , and <strong>Mining Support Unit </strong>(Dozer, Grader, Compac, etc). </p>
-        <a href="#"><i class="fi fi-rr-search-alt adjust"></i> Check Plan and Realize</a>
+        <a href="?page=search"><i class="fi fi-rr-search-alt adjust"></i> Check Plan and Realize</a>
     </div>
     <div class="sumbox">
         <h2>Total Manpower - Primary Mining Unit</h2>

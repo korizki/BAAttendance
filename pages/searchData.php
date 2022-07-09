@@ -20,6 +20,7 @@
                 <select name="shift" id="shift" required>
                     <option value="1">Shift 1</option>
                     <option value="2">Shift 2</option>
+                    <option value="3">All Shift</option>
                 </select>            
             </div>
             <script>
@@ -33,7 +34,7 @@
                     }
                 })
             </script>
-            <button type="submit" id="btnsearch" name="search"><i class="fi fi-rr-search adjust"></i><i class="fi fi-rr-search-alt adjust"></i> Collect Data</button>
+            <button type="submit" id="btnsearch" name="search"><i class="fi fi-rr-search adjust"></i> Collect Data</button>
         </form>
     </div>
     <figure id="illussearch">
