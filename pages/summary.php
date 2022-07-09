@@ -6,6 +6,11 @@
 ?>
 
 <main class="searchContent">
+    <script>
+        document.querySelector('.itemnav').style.opacity = "0.5";
+        const active = document.getElementById('search')
+        active.style.opacity = 1;
+    </script>
     <h1>Summary</h1>
     <div class="sumbox min">
         <div class="headerr">
@@ -284,11 +289,11 @@
             <table>
                 <tr class="val">
                     <td>Realize </td>
-                    <td> <span class="bullet bulgreen">${item.realize}</span> </td>
+                    <td> <span class="bullet bulblue">${item.realize}</span> </td>
                 </tr>
                 <tr class="val">
                     <td>Plan </td>
-                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
+                    <td> <span class="bullet bulgreen">${item.plan}</span> </td>
                 </tr>
                 
             </table>
@@ -303,11 +308,11 @@
             <table>
                 <tr class="val">
                     <td>Realize </td>
-                    <td> <span class="bullet bulgreen">${item.realize}</span> </td>
+                    <td> <span class="bullet bulblue">${item.realize}</span> </td>
                 </tr>
                 <tr class="val">
                     <td>Plan </td>
-                    <td> <span class="bullet bulblue">${item.plan}</span> </td>
+                    <td> <span class="bullet bulgreen">${item.plan}</span> </td>
                 </tr>
                 
             </table>

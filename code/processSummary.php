@@ -1,18 +1,5 @@
 <?php
-    include "connection.php";
-    function countEmployee($jabatan){
-        include "connection.php";
-        return mysqli_query($connect, "SELECT COUNT(JABATAN) AS JABATAN FROM t_pekerja WHERE JABATAN LIKE '%$jabatan%' ");
-    }
-
-    $belaz = mysqli_fetch_array(countEmployee('BELAZ'))['JABATAN'];
-    $shovel = mysqli_fetch_array(countEmployee('SHOVEL'))['JABATAN'];
-    $dozer = mysqli_fetch_array(countEmployee('DOZER'))['JABATAN'];
-    $grader = mysqli_fetch_array(countEmployee('GRADER'))['JABATAN'];
-    $pbelaz = mysqli_fetch_array(countEmployee('PEMANDU BELAZ'))['JABATAN'];
-    $pshovel = mysqli_fetch_array(countEmployee('PEMANDU SHOVEL'))['JABATAN'];
-    $foreman = mysqli_fetch_array(countEmployee('FOREMAN'))['JABATAN'];
-    $wt = mysqli_fetch_array(countEmployee('WATER TRUCK'))['JABATAN'];
+    
 
     // handle pencarian data absen
     if(isset($_GET['startdate'])){
@@ -25,7 +12,7 @@
         // menentukan data realisasi 
         function countFinger($jabatan, $start, $end, $shift){
             include "connection.php";
-            return mysqli_query($connect, "SELECT COUNT(DATE_ABSEN) AS DATA FROM t_finger INNER JOIN t_pekerja ON t_finger.ID_PEKERJA = t_pekerja.ID WHERE DATE_ABSEN BETWEEN '$start' AND '$end' AND SHIFT IN($shift) AND JABATAN LIKE '%$jabatan%' ");
+            return mysqli_query($connect, "SELECT COUNT(DATE_ABSEN) AS DATA FROM t_finger INNER JOIN t_pekerja ON t_finger.ID_PEKERJA = t_pekerja.ID WHERE DATE_ABSEN BETWEEN '$start' AND '$end' AND SHIFT IN($shift) AND JABATAN LIKE '$jabatan%' ");
         }
         // query PIT 2
         $realbelaz2 = mysqli_fetch_array(countFinger('BELAZ PIT 2', $start, $end, $shift))['DATA'];
@@ -65,5 +52,8 @@
         $plangrader3 = mysqli_fetch_array(findPlan('OPT_GD_3', $start, $end, $shift))['OPT_GD_3'];
         $plandozer3 = mysqli_fetch_array(findPlan('OPT_DZ_3', $start, $end, $shift))['OPT_DZ_3'];
         $planforeman3 = mysqli_fetch_array(findPlan('FOREMAN_3', $start, $end, $shift))['FOREMAN_3'];
+
+    } else {
+        header("Location: ../pages/main.php?page=search");
     }
 ?>

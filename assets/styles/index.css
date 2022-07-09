@@ -49,6 +49,10 @@ nav a{
     display: inline-block;
     transform: translate(-8px, 2px);
 }
+.adjuste{
+    display: inline-block;
+    transform: translate(8px, 3px);
+}
 .headersection{
     background: #0f0c29;
     background: linear-gradient(to right, #f1f1f3, #eeedfc, #eeeefc);
@@ -976,4 +980,23 @@ summary, details{
 }
 .bulgreen{
     background: rgba(12, 199, 12, 0.7);
+}
+.navigasi{
+    display: flex;
+    text-decoration: none;
+    color: var(--blue) !important;
+    justify-content: center;
+    gap: 30px;
+}
+.navigasi>a{
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.navigasi>a:hover{
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    color: white;
 }

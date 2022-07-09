@@ -6,7 +6,7 @@
         active.style.opacity = 1;
     </script>
     <!-- process data untuk summary -->
-    <?php include "../code/processSummary.php" ?>
+    <?php include "../code/processHome.php" ?>
 
     <div class="sumhead">
         <img src="../assets/images/summary.svg" alt="illustration">
