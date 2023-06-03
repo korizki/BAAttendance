@@ -1,12 +1,12 @@
 <?php 
     // mengecek apakah ada sesi login user, 
-    // session_start();
-    // if(isset($_SESSION['username'])){
-    //     // jika tidak ada, arahkan ke halaman login
-    //     $username = $_SESSION['username'];
-    // } else {
-    //     header('Location: login.php');
-    // }
+    session_start();
+    if(isset($_SESSION['username'])){
+        // jika tidak ada, arahkan ke halaman login
+        $username = $_SESSION['username'];
+    } else {
+        header('Location: login.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
